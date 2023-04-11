@@ -44,10 +44,16 @@ const Character = () => {
                 <input type="text" id="offset" name="offset"onChange={(e)=> setOffset(e.target.value)} placeholder="offset"/>
                 <button type="submit">Search</button>
             </form>
-            <h3>Characters</h3>
-            <ul style={{width: '100px'}}>{characterList}</ul>
-            <h3>Faves</h3>
-            <ul style={{width: '100px'}}>{favoritesList}</ul>
+            <div>
+                <h3>Characters</h3>
+                <ul style={{width: '100px'}}>{characterList}</ul>
+            </div>
+            <div>
+                <h3>Faves</h3>
+                <ul style={{width: '100px'}}>{favoritesList}</ul>
+            </div>
+
+
 
         </div>
 
