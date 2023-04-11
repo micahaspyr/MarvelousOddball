@@ -25,17 +25,16 @@ const Character = () => {
                 setCharacters(response.data);
             })
         }catch (error){
-            console.log('fuck')
             setCharacters([])
             console.log(error)
         }
     }
     const characterList = characters.map((character, key)=>{
-        return <li key={key} onClick={ e => handleListClick(character) } style={{cursor: "pointer"}}>{character['name']}</li>
+        return <li key={key} onClick={ e => handleListClick(character) }>{character['name']}</li>
     })
 
     const favoritesList = favorites.map((favorite, key)=>{
-        return <li key={key} style={{cursor: "pointer"}}>{favorite['name']}</li>
+        return <li key={key}>{favorite['name']}</li>
     })
     return (
         <div>
